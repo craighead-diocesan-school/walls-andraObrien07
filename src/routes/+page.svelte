@@ -1,5 +1,6 @@
 <script>
   import Header from "$lib/Header.svelte";
+  import Footer from "$lib/Footer.svelte";
 </script>
 
 <Header />
@@ -54,6 +55,4 @@
   </div>
 </main>
 
-<footer>
-  <p>&copy; Craighead Diocesan School 2024 @andrAComan</p>
-</footer>
+<Footer />
