@@ -1,6 +1,6 @@
 <script>
   export let color1 = "orange";
-  export let color2 = "darksalmon";
+  export let color2 = " #ff964585";
 </script>
 
 <header>
@@ -9,4 +9,13 @@
 </header>
 
 <style>
+  h1 {
+    font-family: "Passero One";
+    font-size: 65px;
+  }
+
+  h2 {
+    font-family: "Passero One";
+    font-size: 45px;
+  }
 </style>

@@ -7,3 +7,10 @@
         &copy; Craighead Diocesan School 2024 @andrAComan
     </p>
 </footer>
+
+<style>
+    p {
+        font-family: "Trykker";
+        font-size: 20px;
+    }
+</style>
