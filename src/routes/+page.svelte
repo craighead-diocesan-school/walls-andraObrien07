@@ -8,51 +8,115 @@
 <main>
   <h2>SvelteKit</h2>
 
-  <p>
-    Welcome to coding with SvelteKit, a modern JavaScript framework that makes
-    it easy to code great apps.
-  </p>
   <div class="column">
-    <img src="art-deco.jpeg" alt="Art Deco Wall" />
+    <div class="imgD">
+      <img src="art-deco.jpeg" alt="Art Deco Wall" />
+    </div>
     <p>Art Deco Wall</p>
-    <p>$34.9</p>
+    <p class="price">$34.9</p>
+  </div>
 
-    <img src="flowers-wall.jpeg" alt="Wall With Flower" />
+  <div class="column">
+    <div class="imgD">
+      <img src="flowers-wall.jpeg" alt="Wall With Flower" />
+    </div>
     <p>Wall With Flowers</p>
-    <p>$24.9</p>
+    <p class="price">$24.9</p>
+  </div>
 
-    <img src="grey-run-down.jpeg" alt="Run-Down Wall Painted Grey" />
+  <div class="column">
+    <div class="imgD">
+      <img src="grey-run-down.jpeg" alt="Run-Down Wall Painted Grey" />
+    </div>
     <p>Run Down Wall Painted Grey</p>
-    <p>$4.9</p>
+    <p class="price">$4.9</p>
+  </div>
 
-    <img src="modified-white-brick.jpeg" alt="Brick Wall Painted White" />
+  <div class="column">
+    <div class="imgD">
+      <img src="modified-white-brick.jpeg" alt="Brick Wall Painted White" />
+    </div>
     <p>Brick Wall Painted White</p>
-    <p>$14.9</p>
+    <p class="price">$14.9</p>
+  </div>
 
-    <img src="orange-plaster.jpeg" alt="Plastered Wall Painted Orange" />
+  <div class="column">
+    <div class="imgD">
+      <img src="orange-plaster.jpeg" alt="Plastered Wall Painted Orange" />
+    </div>
     <p>Plastered Wall Painted Orange</p>
-    <p>$11.9</p>
+    <p class="price">$11.9</p>
+  </div>
 
-    <img src="pink-brick.jpeg" alt="Brick Wall Painted Pink" />
+  <div class="column">
+    <div class="imgD">
+      <img src="pink-brick.jpeg" alt="Brick Wall Painted Pink" />
+    </div>
     <p>Brick Wall Painted Pink</p>
-    <p>$19.9</p>
+    <p class="price">$19.9</p>
+  </div>
 
-    <img src="rough-wall.jpeg" alt="Really Rough Wall " />
+  <div class="column">
+    <div class="imgD">
+      <img src="rough-wall.jpeg" alt="Really Rough Wall " />
+    </div>
     <p>Really Rough Wall</p>
-    <p>$4.9</p>
+    <p class="price">$4.9</p>
+  </div>
 
-    <img src="tan-run-down.jpeg" alt="Run-Down Wall Painted Tan" />
+  <div class="column">
+    <div class="imgD">
+      <img src="tan-run-down.jpeg" alt="Run-Down Wall Painted Tan" />
+    </div>
     <p>Run-Down Wall Painted Tan</p>
-    <p>$4.9</p>
+    <p class="price">$4.9</p>
+  </div>
 
-    <img src="unpainted-brick.jpeg" alt="Unpainted Brick Wall" />
+  <div class="column">
+    <div class="imgD">
+      <img src="unpainted-brick.jpeg" alt="Unpainted Brick Wall" />
+    </div>
     <p>Unpainted Brick Wall</p>
-    <p>$9.9</p>
+    <p class="price">$9.9</p>
+  </div>
 
-    <img src="yellow-run-.jpeg" alt="Run-Down Wall Painted Yellow" />
-    <p>Run-Down Wall Painted Yellow</p>
-    <p>$4.9</p>
+  <div class="column">
+    <div class="imgD">
+      <img src="yellow-run-.jpeg" alt="Run-Down Wall Painted Yellow" />
+    </div>
+    <p class="name">Run-Down Wall Painted Yellow</p>
+    <p class="price">$4.9</p>
   </div>
 </main>
 
 <Footer />
+
+<style>
+  .column {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 80%;
+  }
+
+  p {
+    font-family: "Passero One";
+    font-size: 40px;
+  }
+
+  .imgD:hover {
+    background-color: #ff964585;
+    /* transition: 1s; */
+  }
+  .price:hover {
+    background-color: #ff964585;
+  }
+  .name:hover {
+    background-color: #ff964585;
+  }
+
+  .price {
+    font-size: 35px;
+  }
+</style>
