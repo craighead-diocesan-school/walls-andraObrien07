@@ -7,83 +7,83 @@
 
 <main>
   <div class="column">
-    <div class="imgD">
-      <img src="art-deco.jpeg" alt="Art Deco Wall" />
+    <img src="art-deco.jpeg" alt="Art Deco Wall" />
+    <div class="words">
+      <p class="name">Art Deco Wall</p>
+      <p class="price">$34.9</p>
     </div>
-    <p class="name">Art Deco Wall</p>
-    <p class="price">$34.9</p>
   </div>
 
   <div class="column">
-    <div class="imgD">
-      <img src="flowers-wall.jpeg" alt="Wall With Flower" />
+    <img src="flowers-wall.jpeg" alt="Wall With Flower" />
+    <div class="words">
+      <p class="name">Wall With Flowers</p>
+      <p class="price">$24.9</p>
     </div>
-    <p class="name">Wall With Flowers</p>
-    <p class="price">$24.9</p>
   </div>
 
   <div class="column">
-    <div class="imgD">
-      <img src="grey-run-down.jpeg" alt="Run-Down Wall Painted Grey" />
+    <img src="grey-run-down.jpeg" alt="Run-Down Wall Painted Grey" />
+    <div class="words">
+      <p class="name">Run Down Wall Painted Grey</p>
+      <p class="price">$4.9</p>
     </div>
-    <p class="name">Run Down Wall Painted Grey</p>
-    <p class="price">$4.9</p>
   </div>
 
   <div class="column">
-    <div class="imgD">
-      <img src="modified-white-brick.jpeg" alt="Brick Wall Painted White" />
+    <img src="modified-white-brick.jpeg" alt="Brick Wall Painted White" />
+    <div class="words">
+      <p class="name">Brick Wall Painted White</p>
+      <p class="price">$14.9</p>
     </div>
-    <p class="name">Brick Wall Painted White</p>
-    <p class="price">$14.9</p>
   </div>
 
   <div class="column">
-    <div class="imgD">
-      <img src="orange-plaster.jpeg" alt="Plastered Wall Painted Orange" />
+    <img src="orange-plaster.jpeg" alt="Plastered Wall Painted Orange" />
+    <div class="words">
+      <p class="name">Plastered Wall Painted Orange</p>
+      <p class="price">$11.9</p>
     </div>
-    <p class="name">Plastered Wall Painted Orange</p>
-    <p class="price">$11.9</p>
   </div>
 
   <div class="column">
-    <div class="imgD">
-      <img src="pink-brick.jpeg" alt="Brick Wall Painted Pink" />
+    <img src="pink-brick.jpeg" alt="Brick Wall Painted Pink" />
+    <div class="words">
+      <p class="name">Brick Wall Painted Pink</p>
+      <p class="price">$19.9</p>
     </div>
-    <p class="name">Brick Wall Painted Pink</p>
-    <p class="price">$19.9</p>
   </div>
 
   <div class="column">
-    <div class="imgD">
-      <img src="rough-wall.jpeg" alt="Really Rough Wall " />
+    <img src="rough-wall.jpeg" alt="Really Rough Wall " />
+    <div class="words">
+      <p class="name">Really Rough Wall</p>
+      <p class="price">$4.9</p>
     </div>
-    <p class="name">Really Rough Wall</p>
-    <p class="price">$4.9</p>
   </div>
 
   <div class="column">
-    <div class="imgD">
-      <img src="tan-run-down.jpeg" alt="Run-Down Wall Painted Tan" />
+    <img src="tan-run-down.jpeg" alt="Run-Down Wall Painted Tan" />
+    <div class="words">
+      <p class="name">Run-Down Wall Painted Tan</p>
+      <p class="price">$4.9</p>
     </div>
-    <p class="name">Run-Down Wall Painted Tan</p>
-    <p class="price">$4.9</p>
   </div>
 
   <div class="column">
-    <div class="imgD">
-      <img src="unpainted-brick.jpeg" alt="Unpainted Brick Wall" />
+    <img src="unpainted-brick.jpeg" alt="Unpainted Brick Wall" />
+    <div class="words">
+      <p class="name">Unpainted Brick Wall</p>
+      <p class="price">$9.9</p>
     </div>
-    <p class="name">Unpainted Brick Wall</p>
-    <p class="price">$9.9</p>
   </div>
 
   <div class="column">
-    <div class="imgD">
-      <img src="yellow-run-.jpeg" alt="Run-Down Wall Painted Yellow" />
+    <img src="yellow-run-.jpeg" alt="Run-Down Wall Painted Yellow" />
+    <div class="words">
+      <p class="name">Run-Down Wall Painted Yellow</p>
+      <p class="price">$4.9</p>
     </div>
-    <p class="name">Run-Down Wall Painted Yellow</p>
-    <p class="price">$4.9</p>
   </div>
 </main>
 
@@ -94,29 +94,30 @@
     padding-left: 5%;
   }
 
+  .words {
+    margin-left: 60px;
+    margin-top: 100px;
+  }
+
   .column {
     display: flex;
-    align-items: center;
     background-color: rgb(255, 255, 255);
-    transition: 1s;
+    /* transition: 1s; */
   }
   img {
-    width: 80%;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border */
+    border: 10px;
+    border: #563030;
   }
 
   p {
     font-family: "Passero One";
     font-size: 40px;
-  }
-
-  /* .imgD {
-    background-color: rgb(255, 255, 255);
-  } */
-
-  .imgD:hover {
-    background-color: #ff964585;
-    transition: 1s;
-    padding: 4%;
+    margin-bottom: 10px;
+    width: fit-content;
   }
 
   .price {
@@ -130,7 +131,13 @@
   .name {
     background-color: #dcbea4;
   }
-  .name:hover {
+  img:hover + div.words > p {
+    background-color: #ff964585;
+  }
+  img:hover {
+    /* change border color */
+
+    border-color: #ff964585;
     background-color: #ff964585;
   }
 
