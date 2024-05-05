@@ -105,11 +105,12 @@
     /* transition: 1s; */
   }
   img {
-    width: 50%;
+    width: 30%;
     margin-top: 20px;
     margin-bottom: 20px;
     /* border */
     border: 10px;
+    display: flex;
     border: #563030;
   }
 
