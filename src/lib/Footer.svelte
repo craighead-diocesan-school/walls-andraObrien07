@@ -13,4 +13,10 @@
         font-family: "Trykker";
         font-size: 20px;
     }
+
+    @media screen and (max-width: 600px) {
+        footer {
+            width: 600px;
+        }
+    }
 </style>
