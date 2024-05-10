@@ -26,18 +26,14 @@
         margin-top: 100px;
     }
     img {
-        width: 600px;
+        width: 500px;
         margin-top: 20px;
         margin-bottom: 20px;
-        /* border */
-        border: 10px;
         display: flex;
-        border: #563030;
+        border: 15px solid white;
     }
     .column {
         display: flex;
-        background-color: rgb(255, 255, 255);
-        /* transition: 1s; */
     }
     p {
         font-family: "Passero One";
@@ -60,11 +56,10 @@
     img:hover + div.words > p {
         background-color: #ff964585;
     }
-    img:hover {
-        /* change border color */
 
-        border-color: #ff964585;
+    img:hover {
         background-color: #ff964585;
+        border-color: #ff964585;
     }
 
     .price {
